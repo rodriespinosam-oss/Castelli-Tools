@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Castelli Tools — Herramienta de Corte Industrial en México</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Distribuidores de herramienta de corte industrial en México: brocas, rimas, machuelos, fresas, cortadores y buriles de las marcas Cleveland, Meda, Star USA y Lavallee. Cotización el mismo día." />
+  <meta name="keywords" content="herramienta de corte, brocas industriales, rimas, machuelos, fresas, end mills, cortadores, buriles, Cleveland, Star USA, Meda, México" />
+  <meta name="robots" content="index, follow" />
+  <!-- Reemplaza la URL por el dominio real cuando se publique -->
+  <link rel="canonical" href="https://castellitools.com/" />
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Castelli Tools" />
+  <meta property="og:title" content="Castelli Tools — Herramienta de Corte Industrial" />
+  <meta property="og:description" content="Brocas, rimas, machuelos, fresas, cortadores y buriles de marcas líderes. Cotiza por WhatsApp el mismo día." />
+  <meta property="og:url" content="https://castellitools.com/" />
+  <meta property="og:image" content="https://castellitools.com/images/hero.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon + tema -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <meta name="theme-color" content="#0b1420" />
+
+  <!-- Fuentes (solo los pesos realmente usados) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0b1420;
+      --navy2:  #0f1e30;
+      --royal:  #1b3fe4;
+      --royal2: #1430b8;
+      --white:  #ffffff;
+      --off:    #f2f2f0;
+      --gray:   #8a8a8a;
+      --dark:   #0a0a0a;
+      --yellow: #f5c500;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Barlow', sans-serif;
+      background: var(--white);
+      color: var(--dark);
+      overflow-x: hidden;
+    }
+
+    /* ══════════════════════════════
+       NAV
+    ══════════════════════════════ */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      height: 64px;
+      background: linear-gradient(180deg, #0d1828 0%, #0b1420 100%);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 56px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-icon {
+      width: 32px; height: 32px;
+      background: var(--royal);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .logo-icon svg { width: 18px; height: 18px; }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.7);
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: var(--white); }
+
+    .nav-cta {
+      background: linear-gradient(135deg, #2550f0 0%, #1b3fe4 60%, #1430b8 100%);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 12px 26px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .nav-cta:hover { opacity: .85; }
+
+    .nav-right { display: flex; align-items: center; gap: 14px; }
+
+    /* Hamburguesa (oculta en desktop) */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 42px; height: 42px;
+      background: none; border: none; cursor: pointer;
+      padding: 9px;
+    }
+    .nav-toggle span {
+      display: block; height: 2px; width: 100%;
+      background: var(--white); border-radius: 2px;
+      transition: transform .25s ease, opacity .2s ease;
+    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Panel móvil */
+    .mobile-menu {
+      position: fixed;
+      top: 56px; left: 0; right: 0;
+      z-index: 190;
+      background: linear-gradient(180deg, #0d1828 0%, #0b1420 100%);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      display: flex; flex-direction: column;
+      transform: translateY(-12px);
+      opacity: 0; visibility: hidden;
+      transition: transform .25s ease, opacity .25s ease, visibility .25s;
+    }
+    .mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; }
+    .mobile-menu a {
+      color: rgba(255,255,255,.85);
+      text-decoration: none;
+      font-weight: 600; font-size: 0.95rem;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+    }
+    .mobile-menu a:hover, .mobile-menu a:focus-visible { background: rgba(255,255,255,.04); color: var(--white); }
+
+    /* Accesibilidad: foco visible global */
+    a:focus-visible, button:focus-visible, [tabindex]:focus-visible,
+    input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 2px solid #5b82ff;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    /* Respetar preferencia de movimiento reducido */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .001ms !important;
+      }
+    }
+
+    /* ══════════════════════════════
+       HERO
+    ══════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: right center;
+      filter: brightness(.75) saturate(1.05);
+      display: block;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right,
+        rgba(5,10,18,0.97) 0%,
+        rgba(5,10,18,0.85) 35%,
+        rgba(5,10,18,0.3) 60%,
+        transparent 100%);
+    }
+
+    .hero-strip { display: none; }
+    .hero-left { display: none; }
+    .hero-right { display: none; }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 80px;
+      max-width: 600px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--royal);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(2.8rem, 5.5vw, 4.4rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.02;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+    }
+
+    .hero-content h1 span { color: var(--yellow); }
+
+    .hero-content p {
+      color: rgba(255,255,255,.72);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2550f0 0%, #1b3fe4 50%, #1430b8 100%);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .btn-primary:hover { opacity: .85; }
+
+    .btn-ghost {
+      border: 2px solid rgba(255,255,255,.5);
+      color: var(--white);
+      background: transparent;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 12px 30px;
+      text-decoration: none;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-ghost:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.08);
+    }
+
+    /* ══════════════════════════════
+       BRANDS BAND
+    ══════════════════════════════ */
+    .brands {
+      background: linear-gradient(180deg, #090f1c 0%, #0b1420 60%, #0d1828 100%);
+      padding: 52px 64px;
+    }
+
+    .brands-title {
+      text-align: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      margin-bottom: 36px;
+    }
+
+    .brands-track-wrap {
+      overflow: hidden;
+      -webkit-mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+      mask: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    }
+
+    @keyframes scroll-brands {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .brands-track {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+      width: max-content;
+      animation: scroll-brands 28s linear infinite;
+    }
+
+    .brands-track:hover { animation-play-state: paused; }
+
+    .brand-pill {
+      color: var(--white);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      opacity: .65;
+      transition: opacity .25s;
+      white-space: nowrap;
+      cursor: default;
+      user-select: none;
+    }
+    .brand-pill:hover { opacity: 1; }
+
+    .bp-wd40    { color: #f5c500; font-size: 1.3rem; }
+    .bp-austromex { color: #ff4545; }
+    .bp-fandeli { color: #ff7a00; }
+    .bp-ze      { color: #2dce5c; }
+    .bp-permatex{ color: #4da6ff; }
+    .bp-cleveland{ color: #e63030; }
+    .bp-truper  { color: #f47920; }
+    .bp-dewalt  { color: #f5c500; font-size: 1.2rem; }
+    .bp-bosch   { color: #ea0016; }
+    .bp-urrea   { color: #c8102e; }
+    .bp-tuk     { color: #006db7; }
+    .bp-cleline { color: #e63030; }
+
+    /* ══════════════════════════════
+       SPLIT: IMAGEN + TEXTO (nosotros)
+    ══════════════════════════════ */
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 420px;
+    }
+
+    .split-img {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .split-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: grayscale(30%) brightness(.85);
+      transition: transform .6s ease;
+    }
+    .split-img:hover img { transform: scale(1.03); }
+
+    .split-content {
+      background: linear-gradient(135deg, #0f1e33 0%, #0b1420 50%, #07101c 100%);
+      padding: 72px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--royal);
+      border-left: 3px solid var(--royal);
+      padding-left: 10px;
+      margin-bottom: 18px;
+    }
+
+    .split-content h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .split-content p {
+      color: rgba(255,255,255,.62);
+      font-size: 0.93rem;
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      border: 2px solid rgba(255,255,255,.4);
+      color: var(--white);
+      background: transparent;
+      padding: 11px 28px;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: fit-content;
+      transition: border-color .2s, background .2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,.07);
+    }
+
+    /* ══════════════════════════════
+       STATS BAR
+    ══════════════════════════════ */
+    .stats {
+      background: linear-gradient(135deg, #1e4af0 0%, #1b3fe4 40%, #1430b8 100%);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stat {
+      padding: 32px 24px;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,.2);
+    }
+    .stat:last-child { border-right: none; }
+
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.7);
+      margin-top: 6px;
+    }
+
+    /* ══════════════════════════════
+       FEATURE: producto destaque
+    ══════════════════════════════ */
+    .feature {
+      position: relative;
+      min-height: 480px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+    }
+
+    .feature.reverse {
+      direction: rtl;
+    }
+    .feature.reverse > * { direction: ltr; }
+
+    .feature-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      filter: brightness(.12) saturate(.3) blur(1px);
+    }
+
+    .feature-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(5,10,18,0.88);
+    }
+
+    .feature-body {
+      position: relative;
+      z-index: 2;
+      padding: 72px 64px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to right, #080d14 60%, rgba(8,13,20,0.7) 100%);
+    }
+
+    .feature-photo {
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    .feature-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform .6s ease;
+    }
+    .feature-photo:hover img { transform: scale(1.04); }
+
+    .feature-photo::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(5,10,18,0.35) 0%, transparent 30%);
+      pointer-events: none;
+    }
+
+    .feature.reverse .feature-photo::after {
+      background: linear-gradient(to left, rgba(5,10,18,0.35) 0%, transparent 30%);
+    }
+    .feature.reverse .feature-body {
+      background: linear-gradient(to left, #080d14 60%, rgba(8,13,20,0.7) 100%);
+    }
+
+    .feature-body h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+      font-weight: 900;
+      color: var(--white);
+      text-transform: uppercase;
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .feature-body h2 em {
+      color: var(--yellow);
+      font-style: normal;
+    }
+
+    .feature-body p {
+      color: rgba(255,255,255,.62);
+      font-size: 0.93rem;
+      line-height: 1.75;
+      margin-bottom: 32px;
+    }
+
+    /* ══════════════════════════════
+       TESTIMONIAL
+    ══════════════════════════════ */
+    .testimonial {
+      background: linear-gradient(135deg, #0e1927 0%, #111820 50%, #0a1118 100%);
+      padding: 80px 120px;
+      display: flex;
+      gap: 48px;
+      align-items: flex-start;
+    }
+
+    .quote-icon {
+      font-family: Georgia, serif;
+      font-size: 7rem;
+      line-height: .7;
+      color: var(--royal);
+      opacity: .4;
+      flex-shrink: 0;
+      margin-top: 8px;
+      user-select: none;
+    }
+
+    .testi-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: rgba(255,255,255,.75);
+      font-style: italic;
+      margin-bottom: 28px;
+      max-width: 700px;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .testi-avatar {
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #333;
+      flex-shrink: 0;
+    }
+
+    .testi-avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+    .testi-name { font-weight: 700; font-size: 0.92rem; color: var(--white); }
+    .testi-role { font-size: 0.78rem; color: rgba(255,255,255,.45); margin-top: 2px; }
+
+    /* ══════════════════════════════
+       CONTACTO
+    ══════════════════════════════ */
+    .contact {
+      background: linear-gradient(160deg, #0d1828 0%, #0b1420 60%, #07101c 100%);
+      padding: 80px 120px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: var(--white);
+      line-height: 1.05;
+      margin-bottom: 12px;
+    }
+
+    .contact-left p {
+      color: rgba(255,255,255,.55);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    .contact-info { display: flex; flex-direction: column; gap: 24px; }
+
+    .contact-item h3 {
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .contact-item p {
+      color: rgba(255,255,255,.5);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 4px;
+    }
+
+    .contact-item a {
+      color: #5b82ff;
+      font-weight: 600;
+      font-size: 0.88rem;
+      text-decoration: none;
+    }
+    .contact-item a:hover { color: var(--white); }
+
+    /* FORM */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.6);
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      border: 1.5px solid rgba(255,255,255,.12);
+      padding: 11px 14px;
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.9rem;
+      color: var(--white);
+      background: rgba(255,255,255,.05);
+      outline: none;
+      transition: border-color .2s, background .2s;
+      resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,.25);
+    }
+
+    .form-group select option {
+      background: #0d1828;
+      color: var(--white);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #5b82ff;
+      background: rgba(255,255,255,.08);
+    }
+
+    .form-group textarea { min-height: 110px; }
+
+    .btn-submit {
+      background: linear-gradient(135deg, #2550f0 0%, #1b3fe4 60%, #1430b8 100%);
+      color: var(--white);
+      border: none;
+      padding: 14px 32px;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: opacity .2s;
+      align-self: flex-start;
+    }
+    .btn-submit:hover { opacity: .85; }
+
+    .form-status {
+      margin-top: 4px;
+      font-size: 0.85rem;
+      min-height: 1.1em;
+      color: rgba(255,255,255,.85);
+    }
+    .form-status.error { color: #ff8a8a; }
+    .form-status.ok { color: #6ee7a8; }
+    .contact-form input.invalid,
+    .contact-form select.invalid,
+    .contact-form textarea.invalid {
+      border-color: #e63030 !important;
+    }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    footer {
+      background: linear-gradient(180deg, #0b1420 0%, #060d18 100%);
+      padding: 40px 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 3px solid var(--royal);
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.5);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--white); }
+
+    .footer-copy {
+      color: rgba(255,255,255,.3);
+      font-size: 0.75rem;
+    }
+
+    /* ══════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════ */
+    /* ══ RESPONSIVE TABLET ══ */
+    @media (max-width: 1024px) {
+      nav { padding: 0 32px; }
+      .hero-content { padding: 0 48px; }
+      .split-content { padding: 48px 40px; }
+      .feature-body { padding: 56px 48px; }
+      .brands { padding: 40px 40px; }
+      .testimonial { padding: 64px 64px; }
+      .contact { padding: 64px 64px; gap: 48px; }
+      footer { padding: 36px 48px; }
+    }
+
+    /* ══ RESPONSIVE MOBILE ══ */
+    @media (max-width: 768px) {
+      /* NAV */
+      nav { padding: 0 20px; height: 56px; }
+      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-cta { padding: 10px 18px; font-size: 0.72rem; }
+      .nav-logo { font-size: 0.95rem; }
+
+      /* HERO — imagen full visible con overlay desde abajo */
+      .hero {
+        position: relative;
+        min-height: 100svh;
+        display: flex;
+        align-items: flex-end;
+      }
+      .hero-img {
+        position: absolute; inset: 0;
+        width: 100%; height: 100%;
+        object-fit: cover;
+        object-position: 65% center;
+        filter: brightness(.7) saturate(1.05);
+        display: block;
+      }
+      .hero::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: linear-gradient(to top,
+          rgba(5,10,18,0.97) 0%,
+          rgba(5,10,18,0.7) 40%,
+          rgba(5,10,18,0.2) 100%);
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        padding: 0 24px 52px;
+        max-width: 100%;
+      }
+      .hero-content h1 { font-size: 2.3rem; line-height: 1.05; }
+      .hero-content p { font-size: 0.9rem; }
+      .hero-eyebrow { font-size: 0.65rem; }
+      .hero-actions { flex-wrap: wrap; gap: 10px; }
+      .hero-strip { display: none; }
+
+      /* BRANDS */
+      .brands { padding: 36px 20px; }
+      .brands-track { gap: 36px; }
+      .brand-pill { font-size: 0.88rem; }
+
+      /* SPLIT NOSOTROS */
+      .split { grid-template-columns: 1fr; }
+      .split-img { min-height: 260px; }
+      .split-content { padding: 40px 24px; }
+      .split-content h2 { font-size: 1.7rem; }
+
+      /* STATS */
+      .stats { grid-template-columns: 1fr 1fr; }
+      .stat { padding: 24px 16px; border-right: none; border-bottom: 1px solid rgba(255,255,255,.15); }
+      .stat:nth-child(odd) { border-right: 1px solid rgba(255,255,255,.15); }
+      .stat:nth-child(3) { border-bottom: 1px solid rgba(255,255,255,.15); }
+      .stat:last-child { border-bottom: none; }
+      .stat-num { font-size: 2.2rem; }
+
+      /* FEATURES */
+      .feature { grid-template-columns: 1fr; min-height: auto; }
+      .feature.reverse { direction: ltr; }
+      .feature-photo { min-height: 280px; order: -1; }
+      .feature.reverse .feature-photo { order: -1; }
+      .feature-body {
+        padding: 40px 24px;
+        background: linear-gradient(180deg, #080d14 0%, #0b1420 100%) !important;
+      }
+      .feature-body h2 { font-size: 1.7rem; }
+      .feature-photo::after,
+      .feature.reverse .feature-photo::after { display: none; }
+
+      /* TESTIMONIAL */
+      .testimonial { padding: 48px 24px; flex-direction: column; gap: 16px; }
+      .quote-icon { font-size: 4rem; margin-top: 0; }
+      .testi-text { font-size: 0.92rem; }
+
+      /* CONTACTO */
+      .contact { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-left h2 { font-size: 1.8rem; }
+      .btn-submit { width: 100%; text-align: center; }
+
+      /* FOOTER */
+      footer { flex-direction: column; gap: 20px; padding: 28px 24px; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+    }
+
+    /* ══ SMALL MOBILE ══ */
+    @media (max-width: 400px) {
+      .hero-content h1 { font-size: 1.9rem; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .btn-primary, .btn-ghost { width: 100%; text-align: center; padding: 14px 20px; }
+      .stat-num { font-size: 1.9rem; }
+    }
+  
+    /* ══ CATÁLOGO ══ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0b1420; --navy2: #0f1e30; --royal: #1b3fe4; --royal2: #1430b8;
+      --white: #ffffff; --off: #f2f2f0; --gray: #8a8a8a; --dark: #0a0a0a; --yellow: #f5c500;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Barlow', sans-serif; background: var(--navy); color: var(--white); overflow-x: hidden; }
+
+    nav {
+      position: sticky; top: 0; z-index: 200; height: 64px;
+      background: linear-gradient(180deg, #0d1828 0%, #0b1420 100%);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+      display: flex; align-items: center; justify-content: space-between; padding: 0 56px;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--white); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.02em; }
+    .nav-links { display: flex; gap: 40px; list-style: none; }
+    .nav-links a { text-decoration: none; font-weight: 600; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,.7); transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--white); }
+    .nav-cta { background: linear-gradient(135deg,#2550f0 0%,#1b3fe4 60%,#1430b8 100%); color: var(--white); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 26px; text-decoration: none; transition: opacity .2s; }
+    .nav-cta:hover { opacity: .85; }
+
+    .cat-hero { background: linear-gradient(135deg,#0d1828 0%,#0b1420 60%,#0a1a38 100%); border-bottom: 3px solid var(--royal); padding: 56px 80px 48px; }
+    .cat-hero-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--royal); margin-bottom: 12px; display: block; }
+    .cat-hero h1 { font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 800; text-transform: uppercase; line-height: 1; color: var(--white); margin-bottom: 14px; }
+    .cat-hero h1 span { color: var(--royal); }
+    .cat-hero p { color: rgba(255,255,255,.65); font-size: 1rem; max-width: 580px; line-height: 1.6; }
+
+    .filter-bar { padding: 24px 80px; background: #0d1828; border-bottom: 1px solid rgba(255,255,255,.07); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .filter-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-right: 4px; }
+    .filter-btn { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.7); font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 8px 18px; cursor: pointer; transition: all .2s; }
+    .filter-btn:hover, .filter-btn.active { background: var(--royal); border-color: var(--royal); color: var(--white); }
+
+    .catalog-search-wrap { margin-left: auto; }
+    #catalogSearch {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      font-size: 0.85rem;
+      padding: 9px 14px;
+      min-width: 240px;
+      border-radius: 2px;
+    }
+    #catalogSearch::placeholder { color: rgba(255,255,255,.4); }
+    #catalogSearch:focus { outline: none; border-color: var(--royal); }
+    .catalog-empty { color: rgba(255,255,255,.6); text-align: center; padding: 32px 0; }
+    .cat-card { cursor: pointer; }
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    @media (max-width: 768px) {
+      .catalog-search-wrap { margin-left: 0; width: 100%; }
+      #catalogSearch { width: 100%; min-width: 0; }
+    }
+
+    .catalog-section { padding: 48px 80px 64px; }
+    .catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+    .cat-card { background: #0d1828; border: 1px solid rgba(255,255,255,.08); cursor: pointer; transition: transform .2s, border-color .2s, box-shadow .2s; display: flex; flex-direction: column; overflow: hidden; }
+    .cat-card:hover { transform: translateY(-4px); border-color: var(--royal); box-shadow: 0 12px 40px rgba(27,63,228,.18); }
+    .card-img-wrap { width: 100%; height: 180px; background: #f2f2f0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .card-img { width: 100%; height: 100%; object-fit: contain; padding: 16px; display: block; transition: transform .25s; }
+    .cat-card:hover .card-img { transform: scale(1.05); }
+    .card-body { padding: 20px 22px 22px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+    .card-brand { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--royal); }
+    .card-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.25rem; font-weight: 700; text-transform: uppercase; color: var(--white); line-height: 1.15; }
+    .card-desc { font-size: 0.84rem; color: rgba(255,255,255,.55); line-height: 1.5; flex: 1; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; }
+    .card-specs-hint { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,.35); }
+    .card-arrow { width: 32px; height: 32px; background: rgba(27,63,228,.15); display: flex; align-items: center; justify-content: center; transition: background .2s; }
+    .cat-card:hover .card-arrow { background: var(--royal); }
+    .card-arrow svg { width: 14px; height: 14px; stroke: var(--white); fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Cards con imagen de catálogo (fondo oscuro) */
+    .card-img-wrap.dark { background: #0a1220; }
+    .card-img-wrap.dark .card-img { padding: 0; object-fit: cover; object-position: top; }
+
+    .cta-banner { background: linear-gradient(135deg,var(--royal) 0%,var(--royal2) 100%); padding: 40px 80px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .cta-banner-text h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.8rem; font-weight: 800; text-transform: uppercase; color: var(--white); margin-bottom: 6px; }
+    .cta-banner-text p { color: rgba(255,255,255,.75); font-size: 0.92rem; }
+    .cta-wa-btn { display: flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); font-family: 'Barlow', sans-serif; font-weight: 700; font-size: 0.88rem; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; padding: 14px 28px; white-space: nowrap; transition: opacity .2s; flex-shrink: 0; }
+    .cta-wa-btn:hover { opacity: .88; }
+    .cta-wa-btn svg { width: 20px; height: 20px; fill: var(--white); flex-shrink: 0; }
+
+    footer { background: linear-gradient(180deg,#0b1420 0%,#060d18 100%); padding: 40px 80px; display: flex; align-items: center; justify-content: space-between; border-top: 3px solid var(--royal); }
+    .footer-logo { display: flex; align-items: center; gap: 10px; color: var(--white); font-weight: 800; font-size: 1rem; text-decoration: none; }
+    .footer-links { display: flex; gap: 32px; list-style: none; }
+    .footer-links a { color: rgba(255,255,255,.5); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; text-decoration: none; transition: color .2s; }
+    .footer-links a:hover { color: var(--white); }
+    .footer-copy { color: rgba(255,255,255,.3); font-size: 0.75rem; }
+
+    .modal-overlay { position: fixed; inset: 0; background: rgba(6,13,24,.92); backdrop-filter: blur(6px); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 24px; opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; }
+    .modal-overlay.open { opacity: 1; visibility: visible; }
+    .modal { background: #0d1828; border: 1px solid rgba(27,63,228,.3); max-width: 700px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; }
+    .modal-header { background: linear-gradient(135deg,#0f2040 0%,#0b1420 100%); border-bottom: 2px solid var(--royal); padding: 24px 28px 20px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; position: sticky; top: 0; z-index: 1; }
+    .modal-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--royal); margin-bottom: 6px; }
+    .modal-title { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; text-transform: uppercase; color: var(--white); line-height: 1.1; }
+    .modal-close { background: rgba(255,255,255,.08); border: none; cursor: pointer; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background .2s; }
+    .modal-close:hover { background: rgba(255,255,255,.15); }
+    .modal-close svg { width: 16px; height: 16px; stroke: rgba(255,255,255,.8); fill: none; stroke-width: 2.5; stroke-linecap: round; }
+    .modal-body { padding: 24px 28px 28px; }
+    .modal-img-wrap { width: 100%; height: 200px; background: #f2f2f0; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden; }
+    .modal-img-wrap.dark { background: #0a1220; }
+    .modal-img { max-width: 100%; max-height: 100%; object-fit: contain; padding: 16px; }
+    .modal-img-wrap.dark .modal-img { padding: 0; object-fit: cover; object-position: top; width: 100%; height: 100%; }
+    .modal-desc { font-size: 0.9rem; color: rgba(255,255,255,.65); line-height: 1.6; margin-bottom: 20px; }
+    .specs-table-wrap { margin-bottom: 24px; overflow-x: auto; }
+    .specs-table-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,.4); margin-bottom: 10px; }
+    .specs-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+    .specs-table th { background: rgba(27,63,228,.15); color: rgba(255,255,255,.6); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 9px 12px; text-align: left; border-bottom: 1px solid rgba(27,63,228,.2); }
+    .specs-table td { padding: 8px 12px; color: rgba(255,255,255,.8); border-bottom: 1px solid rgba(255,255,255,.05); }
+    .specs-table tr:last-child td { border-bottom: none; }
+    .specs-table tr:nth-child(even) td { background: rgba(255,255,255,.03); }
+    .modal-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-wa { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: var(--white); font-family: 'Barlow', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 13px 24px; text-decoration: none; transition: opacity .2s; flex: 1; justify-content: center; }
+    .btn-wa:hover { opacity: .88; }
+    .btn-wa svg { width: 18px; height: 18px; fill: var(--white); flex-shrink: 0; }
+    .btn-back { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.7); font-family: 'Barlow', sans-serif; font-weight: 600; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 13px 20px; cursor: pointer; transition: all .2s; }
+    .btn-back:hover { background: rgba(255,255,255,.12); color: var(--white); }
+
+    @media (max-width: 1024px) {
+      nav { padding: 0 32px; } .cat-hero { padding: 40px 40px 36px; }
+      .filter-bar { padding: 20px 40px; } .catalog-section { padding: 36px 40px 56px; }
+      .catalog-grid { grid-template-columns: repeat(2,1fr); gap: 20px; }
+      .cta-banner { padding: 32px 40px; } footer { padding: 36px 48px; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; height: 56px; } .nav-links { display: none; } .nav-toggle { display: flex; }
+      .nav-cta { padding: 10px 18px; font-size: 0.72rem; }
+      .cat-hero { padding: 32px 20px 28px; } .cat-hero h1 { font-size: 2.2rem; }
+      .filter-bar { padding: 16px 20px; gap: 8px; } .filter-btn { padding: 7px 14px; font-size: 0.72rem; }
+      .catalog-section { padding: 28px 20px 48px; } .catalog-grid { grid-template-columns: 1fr; gap: 16px; }
+      .cta-banner { flex-direction: column; align-items: flex-start; padding: 28px 20px; }
+      .cta-wa-btn { width: 100%; justify-content: center; }
+      footer { flex-direction: column; gap: 20px; padding: 28px 20px; text-align: center; }
+      .footer-links { flex-wrap: wrap; justify-content: center; gap: 16px; }
+      .modal-actions { flex-direction: column; } .btn-wa { flex: none; width: 100%; }
+    }
+    @media (max-width: 400px) { .cat-hero h1 { font-size: 1.8rem; } }
+
+    /* Catálogo oculto por defecto */
+    #page-landing { display: block; }
+    #page-catalogo { display: none; }
+    
+    /* ══ BOTONES OVALADOS ══ */
+    .btn-primary, .btn-ghost, .btn-outline, .btn-outline-sm,
+    .btn-submit, .nav-cta, .btn-outline { border-radius: 999px !important; }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <a href="#" class="nav-logo" data-nav="landing">
+    <img src="images/logo.webp" alt="Castelli Tools" width="40" height="40" style="width:40px;height:40px;object-fit:contain;border-radius:6px;">
+    Castelli Tools
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#" data-nav="landing">Inicio</a></li>
+    <li><a href="#" data-nav="nosotros">Nosotros</a></li>
+    <li><a href="#" data-nav="catalogo">Catálogo</a></li>
+    <li><a href="#" data-nav="contacto">Contáctanos</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <a href="#" class="nav-cta" data-nav="contacto">Contáctanos</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menú móvil -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <a href="#" data-nav="landing">Inicio</a>
+  <a href="#" data-nav="nosotros">Nosotros</a>
+  <a href="#" data-nav="catalogo">Catálogo</a>
+  <a href="#" data-nav="contacto">Contáctanos</a>
+</div>
+
+<div id="page-landing">
+
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <img class="hero-img" src="images/hero.webp" alt="Operario usando una amoladora en taller industrial" width="1200" height="533" fetchpriority="high" decoding="async" />
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">Ferretería Profesional</span>
+    <h1>Expertos en herramientas<br>de <span>corte</span></h1>
+    <p>En Castelli Tools encontrarás todo lo que necesitas para trabajar con precisión y confianza — desde herramientas manuales hasta equipos industriales de las mejores marcas del mercado.</p>
+    <div class="hero-actions">
+      <a href="#" class="btn-primary" data-nav="catalogo">Ver catálogo</a>
+      <a href="#" class="btn-ghost" data-nav="contacto">Contáctanos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BRANDS ══ -->
+<section class="brands">
+  <p class="brands-title">Trabajamos con las marcas líderes del mercado</p>
+  <div class="brands-track-wrap">
+    <div class="brands-track">
+      <span class="brand-pill bp-wd40">WD-40</span>
+      <span class="brand-pill bp-austromex">Austromex</span>
+      <span class="brand-pill bp-fandeli">Fandeli</span>
+      <span class="brand-pill bp-ze">ZE</span>
+      <span class="brand-pill bp-permatex">Permatex</span>
+      <span class="brand-pill bp-cleveland">Cleveland</span>
+      <span class="brand-pill bp-truper">Truper</span>
+      <span class="brand-pill bp-dewalt">DeWALT</span>
+      <span class="brand-pill bp-bosch">Bosch</span>
+      <span class="brand-pill bp-urrea">Urrea</span>
+      <span class="brand-pill bp-tuk">Tuk</span>
+      <span class="brand-pill bp-cleline">Cle-Line</span>
+      <!-- duplicado para loop infinito -->
+      <span class="brand-pill bp-wd40">WD-40</span>
+      <span class="brand-pill bp-austromex">Austromex</span>
+      <span class="brand-pill bp-fandeli">Fandeli</span>
+      <span class="brand-pill bp-ze">ZE</span>
+      <span class="brand-pill bp-permatex">Permatex</span>
+      <span class="brand-pill bp-cleveland">Cleveland</span>
+      <span class="brand-pill bp-truper">Truper</span>
+      <span class="brand-pill bp-dewalt">DeWALT</span>
+      <span class="brand-pill bp-bosch">Bosch</span>
+      <span class="brand-pill bp-urrea">Urrea</span>
+      <span class="brand-pill bp-tuk">Tuk</span>
+      <span class="brand-pill bp-cleline">Cle-Line</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ NOSOTROS SPLIT ══ -->
+<section class="split" id="nosotros">
+  <div class="split-img">
+    <img
+      src="images/about.webp"
+      alt="Interior de la tienda Castelli Tools" width="760" height="658" loading="lazy" decoding="async" />
+  </div>
+  <div class="split-content">
+    <span class="section-tag">Quiénes somos</span>
+    <h2>Más de una década<br>equipando a los mejores</h2>
+    <p>Somos una ferretería con raíces sólidas y visión profesional. Atendemos a contratistas, técnicos, empresas del sector industrial y clientes particulares que exigen lo mejor para sus proyectos.<br><br>Nuestro equipo te asesora para encontrar exactamente lo que buscas — sin rodeos, sin demoras. Aquí el tiempo y la calidad son lo primero.</p>
+    <a href="#contacto" class="btn-outline">Conoce más</a>
+  </div>
+</section>
+
+
+<!-- ══ STATS ══ -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">+500</div>
+    <div class="stat-label">Productos en stock</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">12+</div>
+    <div class="stat-label">Años de experiencia</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">+3K</div>
+    <div class="stat-label">Clientes atendidos</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">12</div>
+    <div class="stat-label">Marcas líderes</div>
+  </div>
+</div>
+
+
+<!-- ══ FEATURE 1 ══ -->
+<section class="feature">
+  <img class="feature-bg" src="images/feature1_bg.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+  <div class="feature-overlay"></div>
+
+  <div class="feature-body">
+    <span class="section-tag">Herramientas eléctricas</span>
+    <h2>Potencia y <em>precisión</em><br>en cada tarea</h2>
+    <p>Taladros, rotomartillos, amoladoras, sierras circulares y más. Contamos con equipos DeWALT, Bosch y Truper listos para entrega inmediata — ideales para profesionales que no pueden permitirse tiempos muertos.</p>
+    <a href="#" class="btn-outline" data-nav="catalogo">Ver disponibilidad</a>
+  </div>
+  <div class="feature-photo">
+    <img src="images/feature1_bg.jpg" alt="Herramientas eléctricas profesionales" width="736" height="413" loading="lazy" decoding="async" />
+  </div>
+</section>
+
+<!-- ══ FEATURE 2 (reverse) ══ -->
+<section class="feature reverse">
+  <img class="feature-bg" src="images/feature1_photo.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+  <div class="feature-overlay"></div>
+
+  <div class="feature-body">
+    <span class="section-tag">Herramientas manuales</span>
+    <h2>Todo lo que<br>necesitas, <em>siempre</em><br>en stock</h2>
+    <p>Llaves, pinzas, desarmadores, navajas, seguetas y consumibles de las marcas más confiables del mercado. En Castelli Tools nunca saldrás con las manos vacías — mantenemos inventario amplio para que tu trabajo no se detenga.</p>
+    <a href="#contacto" class="btn-outline">Consultar catálogo</a>
+  </div>
+  <div class="feature-photo">
+    <img src="images/feature1_photo.jpg" alt="Herramientas manuales" width="1200" height="520" loading="lazy" decoding="async" />
+  </div>
+</section>
+
+<!-- ══ TESTIMONIAL ══ -->
+<section class="testimonial">
+  <div class="quote-icon">"</div>
+  <div class="testi-content">
+    <p class="testi-text">
+      Llevamos más de tres años comprando en Castelli Tools para todos nuestros proyectos de construcción e instalación. La calidad del producto siempre es la esperada y el trato es completamente profesional. Nos asesoran bien, tienen todo en stock y los precios son muy competitivos. Ya no buscamos en otro lado.
+    </p>
+    <div class="testi-author">
+      <div class="testi-avatar">
+        <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+          <rect width="50" height="50" fill="#c4a882"/>
+          <circle cx="25" cy="20" r="10" fill="#a07850"/>
+          <ellipse cx="25" cy="46" rx="18" ry="12" fill="#a07850"/>
+        </svg>
+      </div>
+      <div>
+        <div class="testi-name">Roberto Garza</div>
+        <div class="testi-role">Contratista — RG Construcciones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CONTACTO ══ -->
+<section class="contact" id="contacto">
+  <div class="contact-left">
+    <span class="section-tag" style="color:var(--royal);border-color:var(--royal);">Contacto</span>
+    <h2>Estamos<br>para ayudarte</h2>
+    <p>¿Tienes un proyecto grande? ¿Necesitas cotización por volumen? Escríbenos o llámanos y te respondemos el mismo día.</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Correo electrónico</h3>
+        <p>Respondemos en menos de 24 horas.</p>
+        <a id="contactEmail" href="mailto:contacto@castellitools.com">contacto@castellitools.com</a>
+      </div>
+      <div class="contact-item">
+        <h3>Teléfono</h3>
+        <p>Lunes a viernes de 9 AM a 6 PM.<br>Sábados de 9 AM a 2 PM.</p>
+        <a id="contactPhone" href="tel:+525500000000">+52 55 0000 0000</a>
+      </div>
+      <div class="contact-item">
+        <h3>Sucursal</h3>
+        <p>Visítanos directamente — te atendemos en mostrador con gusto.</p>
+      </div>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contactForm" novalidate>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="cf-nombre">Nombre</label>
+        <input id="cf-nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre completo" />
+      </div>
+      <div class="form-group">
+        <label for="cf-empresa">Empresa (opcional)</label>
+        <input id="cf-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nombre de tu empresa" />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="cf-email">Correo electrónico</label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="correo@ejemplo.com" />
+    </div>
+    <div class="form-group">
+      <label for="cf-tel">Teléfono</label>
+      <input id="cf-tel" name="telefono" type="tel" autocomplete="tel" placeholder="+52 55 0000 0000" />
+    </div>
+    <div class="form-group">
+      <label for="cf-asunto">¿En qué podemos ayudarte?</label>
+      <select id="cf-asunto" name="asunto" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option>Cotización por volumen</option>
+        <option>Disponibilidad de producto</option>
+        <option>Información de marcas</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="cf-mensaje">Mensaje</label>
+      <textarea id="cf-mensaje" name="mensaje" required placeholder="Cuéntanos sobre tu proyecto o lo que necesitas..."></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Enviar mensaje</button>
+    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+
+<!-- ══ FOOTER ══ -->
+</div>
+<div id="page-catalogo"><section class="cat-hero">
+  <span class="cat-hero-eyebrow">Cleveland · Meda · Star USA · Lavallee</span>
+  <h1>Catálogo de <span>Productos</span></h1>
+  <p>Distribuidores de herramienta de corte industrial en México. Brocas, rimas, machuelos, end mills, cortadores y buriles de las marcas líderes del mercado.</p>
+</section>
+
+<div class="filter-bar" role="toolbar" aria-label="Filtros de catálogo">
+  <span class="filter-label">Filtrar:</span>
+  <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+  <button class="filter-btn" data-filter="broca" aria-pressed="false">Brocas</button>
+  <button class="filter-btn" data-filter="rima" aria-pressed="false">Rimas</button>
+  <button class="filter-btn" data-filter="machuelo" aria-pressed="false">Machuelos</button>
+  <button class="filter-btn" data-filter="endmill" aria-pressed="false">Fresas</button>
+  <button class="filter-btn" data-filter="cortador" aria-pressed="false">Cortadores</button>
+  <button class="filter-btn" data-filter="buril" aria-pressed="false">Buriles</button>
+  <div class="catalog-search-wrap">
+    <label for="catalogSearch" class="visually-hidden">Buscar en el catálogo</label>
+    <input id="catalogSearch" type="search" placeholder="Buscar producto, marca o medida…" autocomplete="off" />
+  </div>
+</div>
+
+<section class="catalog-section">
+  <p id="catalogEmpty" class="catalog-empty" style="display:none;">No encontramos productos con esos criterios. Prueba con otra palabra o quita el filtro.</p>
+  <div class="catalog-grid" id="catalogGrid" aria-label="Productos del catálogo">
+
+    <!-- BROCAS -->
+    <article class="cat-card" data-cat="broca" data-id="broca_frac" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_broca_frac.webp" alt="Brocas Fraccionales" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Lista C71</span>
+        <h3 class="card-title">Brocas Fraccionales</h3>
+        <p class="card-desc">Zanco recto, uso general. De 3/64" a 11/16". Acero alta velocidad M2, ángulo 118°.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="broca" data-id="broca_num" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_broca_frac.webp" alt="Brocas Numéricas" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Lista 2001G</span>
+        <h3 class="card-title">Brocas Numéricas</h3>
+        <p class="card-desc">Serie Normal. Numeración #1 al #60. Zanco recto, uso general. Acero alta velocidad.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="broca" data-id="broca_cono" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_broca_frac.webp" alt="Brocas Zanco Cónico" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Lista C12</span>
+        <h3 class="card-title">Brocas Zanco Cónico</h3>
+        <p class="card-desc">Cono Morse #1. De 1/8" a 17/64". Para taladros de columna y tornos de bancada.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="broca" data-id="broca_met" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_broca_frac.webp" alt="Brocas Métricas" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Republic Drill · Serie 35</span>
+        <h3 class="card-title">Brocas Métricas</h3>
+        <p class="card-desc">Taper Shank. De 8mm a 50.5mm en incrementos de 0.1mm. Acero alta velocidad 118°.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <!-- RIMAS -->
+    <article class="cat-card" data-cat="rima" data-id="rima_maq" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_rima_maq.jpg" alt="Rimas para Máquina" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Lavallee · Star USA</span>
+        <h3 class="card-title">Rimas para Máquina</h3>
+        <p class="card-desc">Taper Shank chucking (L&I), carburo sólido (Star S542), canales helicoidales (Cleveland L4030). Alta precisión dimensional.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="rima" data-id="rima_mano" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_rima_mano.jpg" alt="Rimas de Mano" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Meda · Star USA · Series 63/64/860/982</span>
+        <h3 class="card-title">Rimas de Mano</h3>
+        <p class="card-desc">Flauta recta y helicoidal (LH). Fraccionales de 1/8" a 1-1/2" y métricas de 3mm a 20mm.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="rima" data-id="rima_adj" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_rima_mano.jpg" alt="Rimas Ajustables" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Meda Superior Import · Serie 458</span>
+        <h3 class="card-title">Rimas Ajustables</h3>
+        <p class="card-desc">Rango de 1/4" a 3-11/32". 16 tamaños. Se expanden para restituir diámetro original al desgaste.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <!-- MACHUELOS -->
+    <article class="cat-card" data-cat="machuelo" data-id="machuelo" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_machuelo.webp" alt="Machuelos" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Listas 1004M / 1053</span>
+        <h3 class="card-title">Machuelos</h3>
+        <p class="card-desc">Juego milimétrico y punta espiral. Acero alta velocidad, rosca derecha rectificada. Para aceros aleados, carbón e inoxidable.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <!-- END MILLS -->
+    <article class="cat-card" data-cat="endmill" data-id="endmill_multi" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_endmill_multi.jpg" alt="End Mills Multi-Flute" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Star USA · Series 767 / 751 / 758</span>
+        <h3 class="card-title">Fresas Múltiples Flautas</h3>
+        <p class="card-desc">HSS y cobalto. Múltiples flautas con corte al centro. Fresas bola 3 flautas. Recubrimientos TiN, TiCN, TiAlN disponibles.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="endmill" data-id="endmill_sc" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_endmill_multi.jpg" alt="End Mills Carburo Sólido" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Star USA · Serie 110</span>
+        <h3 class="card-title">Fresas de Carburo Sólido</h3>
+        <p class="card-desc">2 y 4 flautas, longitud media, larga y extra-larga. Extremo cuadrado. Para fresado de bolsillos profundos.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <!-- CORTADORES -->
+    <article class="cat-card" data-cat="cortador" data-id="cortador_v" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_cortador_v.webp" alt="Cortadores Verticales" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Listas 683 / 684</span>
+        <h3 class="card-title">Cortadores Verticales</h3>
+        <p class="card-desc">End mills 2 y 4 flautas. Doble extremo y sin corte al centro. Acabado brillante, TiN y TiCN.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="cortador" data-id="woodruff" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_woodruff.jpg" alt="Fresas para Chavetero" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Star USA · Serie 997</span>
+        <h3 class="card-title">Fresas para Chavetero</h3>
+        <p class="card-desc">HSS y cobalto, RH y LH, carburo. Zanco 1/2"×2". Para chaveteros Woodruff, ranuras y roscas. 35+ tamaños estándar.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="cortador" data-id="side_mill" tabindex="0" role="button">
+      <div class="card-img-wrap dark"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_side_mill.webp" alt="Fresas de Disco" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Meda · Star USA · Series 107 / 985</span>
+        <h3 class="card-title">Fresas de Disco</h3>
+        <p class="card-desc">Diente recto. Diámetros de 2" a 12", ancho de cara de 3/16" a 1". Hoyo de 1/2" a 1-1/4". Carburo disponible a pedido.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <article class="cat-card" data-cat="cortador" data-id="cortador_c" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_cortador_c.webp" alt="Cortadores para Engranes" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Lista 139</span>
+        <h3 class="card-title">Cortadores para Engranes</h3>
+        <p class="card-desc">Para engranes paso diametral. D1 de 4" a 24". Número de dientes variables. Herramienta especial hasta agotar existencia.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+    <!-- BURILES -->
+    <article class="cat-card" data-cat="buril" data-id="buril" tabindex="0" role="button">
+      <div class="card-img-wrap"><img class="card-img" width="400" height="300" decoding="async" src="images/prod_buril.webp" alt="Buriles y Cuchillas" loading="lazy" /></div>
+      <div class="card-body">
+        <span class="card-brand">Cleveland · Listas 853 / 855 / 858</span>
+        <h3 class="card-title">Buriles y Cuchillas</h3>
+        <p class="card-desc">Buriles cuadrados y cuchillas Momax Cobalt para tronzar. Holders Armstrong & Williams.</p>
+        <div class="card-footer"><span class="card-specs-hint">Ver especificaciones</span><div class="card-arrow"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="cta-banner-text">
+    <h2>¿No encuentras lo que buscas?</h2>
+    <p>Contamos con catálogo completo. Escríbenos con el código EDP o medida que necesitas.</p>
+  </div>
+  <a id="ctaWaBtn" href="https://wa.me/521XXXXXXXXXX?text=Hola%2C%20necesito%20cotizar%20herramienta.%20%C2%BFMe%20pueden%20ayudar%3F" target="_blank" rel="noopener" class="cta-wa-btn">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Cotizar por WhatsApp
+  </a>
+</div></div>
+<footer>
+  <a href="#" class="footer-logo" data-nav="landing">
+    <img src="images/logo.webp" alt="Castelli Tools" width="40" height="40" style="width:40px;height:40px;object-fit:contain;border-radius:6px;">
+    Castelli Tools
+  </a>
+
+  <ul class="footer-links">
+    <li><a href="#" data-nav="landing">Inicio</a></li>
+    <li><a href="#" data-nav="nosotros">Nosotros</a></li>
+    <li><a href="#" data-nav="catalogo">Catálogo</a></li>
+    <li><a href="#" data-nav="contacto">Contacto</a></li>
+  </ul>
+
+  <span class="footer-copy">© 2025 Castelli Tools. Todos los derechos reservados. &nbsp;·&nbsp; Sitio desarrollado por <a href="https://rodev.com.mx" target="_blank" style="color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">rodev.com.mx</a></span>
+</footer>
+
+
+
+
+<script>
+/* ════════════════════════════════════════════════════════════
+   CONFIGURACIÓN — EDITA SOLO ESTOS VALORES
+   Cambia el número de WhatsApp, teléfono y correo en un solo lugar.
+   El número de WhatsApp va en formato internacional sin signos:
+   52 (México) + 1 + 10 dígitos.  Ej: '5215512345678'
+   ════════════════════════════════════════════════════════════ */
+const CONFIG = {
+  waNumber: '521XXXXXXXXXX',          // ← REEMPLAZAR por el WhatsApp real
+  phone:    '+525500000000',          // ← REEMPLAZAR por el teléfono real
+  phoneText:'+52 55 0000 0000',       // ← cómo se muestra el teléfono
+  email:    'contacto@castellitools.com'
+};
+
+// Inyecta datos de contacto desde CONFIG (una sola fuente de verdad)
+document.addEventListener('DOMContentLoaded', function() {
+  const ph = document.getElementById('contactPhone');
+  if (ph) { ph.href = 'tel:' + CONFIG.phone; ph.textContent = CONFIG.phoneText; }
+  const em = document.getElementById('contactEmail');
+  if (em) { em.href = 'mailto:' + CONFIG.email; em.textContent = CONFIG.email; }
+  const cta = document.getElementById('ctaWaBtn');
+  if (cta) {
+    const t = encodeURIComponent('Hola, necesito cotizar herramienta. ¿Me pueden ayudar?');
+    cta.href = 'https://wa.me/' + CONFIG.waNumber + '?text=' + t;
+  }
+});
+
+// ── Navegación SPA ──
+function showPage(page) {
+  document.getElementById('page-landing').style.display = (page === 'landing') ? 'block' : 'none';
+  document.getElementById('page-catalogo').style.display = (page === 'catalogo') ? 'block' : 'none';
+  window.scrollTo(0, 0);
+}
+
+function goTo(nav) {
+  if (nav === 'catalogo') {
+    showPage('catalogo');
+  } else if (nav === 'landing') {
+    showPage('landing');
+  } else {
+    showPage('landing');
+    setTimeout(function() {
+      var el = document.getElementById(nav);
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 150);
+  }
+}
+
+// ── Menú móvil (hamburguesa) ──
+function closeMobileMenu() {
+  const menu = document.getElementById('mobileMenu');
+  const toggle = document.getElementById('navToggle');
+  if (!menu) return;
+  menu.classList.remove('open');
+  menu.setAttribute('aria-hidden', 'true');
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.setAttribute('aria-label', 'Abrir menú');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const toggle = document.getElementById('navToggle');
+  const menu = document.getElementById('mobileMenu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', function() {
+      const open = menu.classList.toggle('open');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    });
+  }
+
+  // Delegación de navegación (cierra el menú móvil tras elegir)
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('[data-nav]');
+    if (a) {
+      e.preventDefault();
+      closeMobileMenu();
+      goTo(a.getAttribute('data-nav'));
+    }
+  });
+});
+
+// ── Catálogo ──
+
+// dark = imagen de catálogo (fondo oscuro), light = foto de producto (fondo blanco)
+const IMG_STYLE = {
+  broca_frac:'light', broca_num:'light', broca_cono:'light', broca_met:'light',
+  rima_maq:'dark', rima_mano:'dark', rima_adj:'dark',
+  machuelo:'light',
+  endmill_multi:'dark', endmill_sc:'dark',
+  cortador_v:'dark', woodruff:'dark', side_mill:'dark', cortador_c:'light',
+  buril:'light',
+};
+
+const IMGS = {
+  broca_frac:   'images/prod_broca_frac.webp',
+  broca_num:    'images/prod_broca_frac.webp',
+  broca_cono:   'images/prod_broca_frac.webp',
+  broca_met:    'images/prod_broca_frac.webp',
+  rima_maq:     'images/prod_rima_maq.jpg',
+  rima_mano:    'images/prod_rima_mano.jpg',
+  rima_adj:     'images/prod_rima_mano.jpg',
+  machuelo:     'images/prod_machuelo.webp',
+  endmill_multi:'images/prod_endmill_multi.jpg',
+  endmill_sc:   'images/prod_endmill_multi.jpg',
+  cortador_v:   'images/prod_cortador_v.webp',
+  woodruff:     'images/prod_woodruff.jpg',
+  side_mill:    'images/prod_side_mill.webp',
+  cortador_c:   'images/prod_cortador_c.webp',
+  buril:        'images/prod_buril.webp',
+};
+
+const CATS = {
+  broca_frac: { eyebrow:'Cleveland — Lista C71', title:'Brocas Fraccionales', desc:'Zanco recto, uso general. De 3/64" a 11/16". Acero alta velocidad M2, ángulo 118°. Empaque de 12 piezas por paquete.', thead:['Diám. (pulg.)','mm','Largo Total','Largo Flauta','Pzas.','EDP'], tbody:[['3/64','1.19','1-3/4','3/4','12','C71003'],['1/16','1.58','1-7/8','7/8','12','C71004'],['1/8','3.17','2-3/4','1-5/8','12','C71008'],['3/16','4.76','3-1/2','2-5/16','12','C71012'],['1/4','6.35','4','2-3/4','12','C71016'],['5/16','7.93','4-1/2','3-3/16','6','C71020'],['3/8','9.52','5','3-5/8','6','C71024'],['1/2','12.7','6','4-1/2','6','C71032'],['11/16','17.46','7-1/8','5-3/16','1','C71044']] },
+  broca_num:  { eyebrow:'Cleveland — Lista 2001G', title:'Brocas Numéricas', desc:'Zanco recto, uso general, Serie Normal. Numeración estándar #1 al #60. Acero alta velocidad, ángulo 118°.', thead:['Núm.','Dec.','mm','Largo Total','Largo Flauta','EDP'], tbody:[['60','.0400','1.01','1-5/8','11/16','C71160'],['50','.0700','1.77','2','1','C71148'],['40','.0980','2.48','2-3/8','1-3/8','C71139'],['30','.1285','3.26','2-3/4','1-5/8','C71130'],['20','.1610','4.08','3-1/4','2-1/8','C71120'],['10','.1935','4.91','3-5/8','2-7/16','C71111'],['1','.2280','5.79','3-7/8','2-5/8','C71101']] },
+  broca_cono: { eyebrow:'Cleveland — Lista C12', title:'Brocas Zanco Cónico', desc:'Cono Morse #1. Acero alta velocidad, ángulo 118°. Para taladros de columna y tornos de bancada. Empaque por unidad.', thead:['Diám. (pulg.)','Largo Total','Largo Flauta','Cono Morse','EDP'], tbody:[['1/8','5-1/8','1-7/8','1','C12040'],['3/16','5-3/4','2-1/2','1','C12064'],['7/32','6','2-3/4','1','C12075'],['1/4','6-1/8','2-7/8','1','C12091'],['17/64','6-1/4','3','1','C12099']] },
+  broca_met:  { eyebrow:'Republic Drill — Serie 35', title:'Brocas Métricas (Taper Shank)', desc:'HSS 118°, zanco cónico. De 8.0mm a 50.5mm. Incrementos de 0.1mm disponibles.', thead:['Diám. (mm)','M.T.','Flauta (mm)','OAL (mm)','Núm. Orden'], tbody:[['8.0','1','75','156','1670800'],['10.0','1','87','168','1671000'],['12.0','1','101','182','1671200'],['16.0','2','120','218','1671600'],['20.0','2','140','238','1672000'],['25.0','3','160','281','1672500'],['32.0','4','185','334','1673250'],['40.0','4','200','349','1674000'],['50.0','4','220','369','1674950']] },
+  rima_maq:   { eyebrow:'Cleveland · Lavallee & Ide · Star USA', title:'Rimas para Máquina', desc:'Taper Shank Chucking (Lavallee S55/56/982), carburo sólido zanco recto (Star S542), canales helicoidales (Cleveland L4030). Para acabados de alta precisión en aluminio, fundición, aceros y plásticos.', thead:['Serie','Diám.','Flauta (pulg.)','OAL (pulg.)','Núm. Orden'], tbody:[['L&I S55 Straight','1/4','1-1/2','6','1140016'],['L&I S55','3/8','1-3/4','7','1140024'],['L&I S55','1/2','2','8','1140032'],['L&I S55','3/4','2-1/2','9-1/2','1140048'],['L&I S55','1','2-3/4','10-1/2','1140064'],['Star S542 Carbide','3/16','1-1/8','4-1/2','5420012'],['Star S542','1/4','1-1/2','6','5420016'],['Star S542','3/8','1-3/4','7','5420024'],['Star S542','1/2','2','8','5420032'],['Star S542','1','2-3/4','10-1/2','5420064'],['Star S542','1-1/2','3-1/2','12-1/2','5420080']] },
+  rima_mano:  { eyebrow:'Meda Superior Import · Star USA · Series 63/64/860/982', title:'Rimas de Mano', desc:'Flauta recta (Meda S63/Star S982) y helicoidal LH (Meda S64). Métrica flauta recta y helicoidal (Meda S860). De 1/8" a 1-1/2" fraccional y 3mm a 20mm métrico.', thead:['Tamaño','Flauta (pulg.)','OAL (pulg.)','EDP Meda Recto','EDP Star Recto'], tbody:[['1/8','1-1/2','3','1180008','1010600'],['3/16','1-3/4','3-1/2','1180012','1010604'],['1/4','2','4','1180016','1010608'],['3/8','2-1/2','5','1180024','1010616'],['1/2','3','6','1180032','1010624'],['3/4','3-1/2','7','1180048','1010632'],['1','4-3/8','8-3/8','1180064','1010640'],['1-1/4','4-7/8','9-3/4','1180080','1010649'],['1-1/2','5-13/16','11-5/8','1180096','1010648']] },
+  rima_adj:   { eyebrow:'Meda Superior Import — Serie 458', title:'Rimas Ajustables', desc:'Adjustable Blade Reamers. Se expanden para restituir diámetro original. HSS. Rango de 1/4" a 3-11/32". Juegos disponibles (ABRS1–ABRS4).', thead:['Tamaño','Rango','OAL (pulg.)','Núm. Orden','Precio USD'], tbody:[['8/A','1/4 - 9/32','3-1/4','7950081','$13.90'],['5/A','11/32 - 3/8','4-3/8','7950051','$12.55'],['3/A','13/32 - 7/16','5','7950031','$14.10'],['A','15/32 - 17/32','5-1/2','7950100','$14.50'],['C','19/32 - 21/32','6-1/2','7950300','$16.15'],['H','15/16 - 1-1/16','9','7950800','$20.85'],['J','1-3/16 - 1-11/32','11','7951000','$30.55'],['L','1-1/2 - 1-13/16','14','7951200','$55.30'],['N','2-7/32 - 2-3/4','18','7951400','$137.45'],['O','2-3/4 - 3-11/32','20','7951500','$215.30']] },
+  machuelo:   { eyebrow:'Cleveland — Listas 1004M / 1053', title:'Machuelos', desc:'Juego milimétrico (L1004M) y punta espiral (L1053). Acero alta velocidad, rosca derecha rectificada. Para aceros aleados, carbón, herramientas e inoxidables.', thead:['Diám. (mm)','Paso (mm)','EDP L1004M','D1 L1053 (pulg.)','Hilos x pulg.','EDP L1053'], tbody:[['4','0.70','1193-040704M','0','NF-80','C57285'],['6','1.00','1193-061005M','2','NF-64','C57309'],['8','1.00','1193-081005M','4','NC-40','C57324'],['10','1.00','1193-101005M','6','NC-32','C57348'],['14','1.50','1193-141506M','1/4','NC-20','C57406'],['16','2.00','1193-162007M','5/16','NC-18','C57428'],['20','2.50','1193-202507M','3/8','NC-16','C57452']] },
+  endmill_multi: { eyebrow:'Star USA — Series 767 / 751 / 758', title:'Fresas Múltiples Flautas', desc:'HSS (S767) y Cobalto (S751) múltiples flautas con corte al centro. Longitudes corta, regular, larga y extra-larga. Fresas bola 3 flautas cobalto (S758). Recubrimientos TiN, TiCN, TiAlN y AlTiN disponibles.', thead:['Diám. Fresa','Diám. Zanco','Long. Flauta','Long. Total','Fl.','Núm. HSS','Precio HSS'], tbody:[['1/8','3/8','3/16','2-1/8','4','11434','$12.95'],['3/16','3/8','1/2','2-3/8','4','12980','$18.00'],['1/4','3/8','7/8','2-11/16','4','11586','$18.00'],['3/8','3/8','1','3','4','11466','$13.50'],['1/2','1/2','1-1/4','3-1/4','4','12957','$19.95'],['3/4','3/4','2','5-1/4','4','11344','$36.35'],['1','1','3','5','4','11184','$24.55']] },
+  endmill_sc: { eyebrow:'Star USA — Serie 110 (Carburo Sólido)', title:'Fresas de Carburo Sólido', desc:'2 y 4 flautas, longitud media, larga y extra-larga. Extremo cuadrado. Tolerancia +.000/-.00. Flauta larga para fresado de bolsillos profundos. Recubrimiento coated disponible.', thead:['Diám. Fresa','Diám. Zanco','Long. Flauta','Long. Total','Fl.','Núm. Sin Recub.','Precio'], tbody:[['1/16','1/8','3/8','1-1/2','2','11521','$17.80'],['1/8','1/8','3/4','3','2','16061','$12.10'],['1/4','1/4','1-1/8','3','2','2625116','$14.50'],['3/8','3/8','1-1/8','3','2','2625124','$21.25'],['1/2','1/2','1-1/4','3','2','11529','$37.30'],['5/8','5/8','2-1/4','5','2','2625140','$78.00'],['3/4','3/4','2-1/4','5','2','2625148','$110.00'],['1','1','2-1/4','5','2','2625164','$147.80']] },
+  cortador_v: { eyebrow:'Cleveland — Listas 683 / 684', title:'Cortadores Verticales', desc:'End mills 2 y 4 flautas. Lista 684 doble extremo/corte al centro. Lista 683 sin corte al centro, zanco recto. Acabado brillante, TiN y TiCN. Para aceros aleados, aluminio y fundición.', thead:['D1 (pulg.)','Largo Total','Largo Corte','D2 Zanco','Fl.','EDP Brillante'], tbody:[['1/8','2-3/16','3/8','3/8','4','C42208'],['3/16','2-3/8','1/2','3/8','4','C39401'],['1/4','2-7/16','5/8','3/8','4','C42225'],['3/8','2-7/16','3/4','3/8','4','C39408'],['1/2','2-1/2','3/4','1/2','4','C39411'],['3/4','3','1','3/4','4','C39412'],['1','3','1','1','4','C39413']] },
+  woodruff:   { eyebrow:'Star USA — Serie 997', title:'Fresas para Chavetero', desc:'HSS RH y LH, cobalto y carburo. Zanco 1/2"×2". Para maquinado de chaveteros tipo Woodruff, ranuras y roscas. Dientes rectos y escalonados disponibles.', thead:['Núm. Std. Amer.','Diám. Cabeza','Ancho Cabeza','Dientes','EDP HSS-RH','Precio'], tbody:[['202','1/4','1/16','Str-8 / Stag-6','9762010 / 9762015','$24.95 / $32.50'],['203','3/8','1/16','Str-8 / Stag-6','9762030 / 9762035','$24.95 / $32.50'],['303','3/8','3/32','Str-8 / Stag-6','9763030 / 9763035','$24.95 / $32.50'],['204','1/2','1/16','Str-10 / Stag-8','9762040 / 9762045','$24.95 / $32.50'],['404','1/2','1/8','Str-10 / Stag-8','9764040 / 9764045','$24.95 / $32.50'],['305','5/8','3/32','Str-10 / Stag-8','9763050 / 9763055','$25.20 / $32.75'],['406','3/4','1/8','Str-10 / Stag-8','9764060 / 9764065','$26.40 / $33.80'],['507','7/8','5/32','Str-12 / Stag-10','9765070 / 9765075','$28.75 / $37.00'],['808','1','1/4','Str-12 / Stag-10','9768080 / 9767080','$31.80 / $41.70']] },
+  side_mill:  { eyebrow:'Meda Superior Import · Star USA — Series 107 / 985', title:'Fresas de Disco', desc:'Fresas de disco diente recto en acero alta velocidad. Diámetros de 2" a 12", ancho de cara de 3/16" a 1". Hoyo de 1/2" a 1-1/4". Carburo Tipped disponible a pedido.', thead:['Diám.','Ancho de Cara','Hoyo Diám.','EDP Meda','Precio Meda','EDP Star','Precio Star'], tbody:[['2','3/16','1/2','4502120','$21.60','8510701','$30.25'],['2','3/8','5/8','4502241','$18.20','8510706','$34.35'],['2-1/2','1/4','7/8','4525162','$24.40','8510707','$36.10'],['2-1/2','1/2','1','4525322','$27.75','8510714','$41.15'],['3','1/4','1','4503163','$28.20','8510720','—'],['3','1/2','1','4503323','$33.80','8510738','—'],['4','3/16','1','4504123','$45.10','8510782','$53.30'],['4','1/2','1','4504323','$45.75','8510798','$67.20'],['6','1/4','1','4506163','$80.80','8510885','$114.95']] },
+  cortador_c: { eyebrow:'Cleveland — Lista 139', title:'Cortadores para Engranes', desc:'Cortadores de perfil para engranes paso diametral. Herramienta especial disponible hasta agotar existencia. D1 de 4" a 24". Número de dientes variables.', thead:['D1 (pulg.)','A Ancho','Núm. Dientes','EDP'], tbody:[['4','2','55 A 134','1391-9082'],['6','3','12 A 13','1391-9108'],['8','1','55 A 134','1391-9122'],['10','3','35 A 34','1391-9141'],['12','2','21 A 25','1391-9165'],['16','1','55 A 134','1391-9182'],['20','2','26 A 34','1391-9204'],['24','3','35 A 54','1391-9224']] },
+  buril:      { eyebrow:'Cleveland — Listas 853 / 855 / 858', title:'Buriles y Cuchillas', desc:'Buriles cuadrados Momax Cobalt (L855) y cuchillas para tronzar (L853/L858). Holders Armstrong & Williams. Acero alta velocidad y al cobalto.', thead:['Lista','A Ancho (pulg.)','Largo Total','Pzas.','EDP'], tbody:[['855 Buriles Cuadrados','1/8','9-1/2','10','C44536'],['855 Buriles Cuadrados','3/16','9-1/2','10','C44540'],['855 Buriles Cuadrados','1/4','9-1/2','10','C44544'],['853 Cuchillas Tronzar','5/64','4-1/2','—','C44738'],['853 Cuchillas Tronzar','3/32','4-1/2','—','C44740'],['858 Cobalt Tronzar','5/64','4-1/2','—','C44739'],['858 Cobalt Tronzar','3/32','4-1/2','—','C44741'],['858 Cobalt Tronzar','1/8','5','—','C44743']] },
+};
+
+let lastFocused = null;
+
+function openModal(id) {
+  const cat = CATS[id]; if (!cat) return;
+  document.getElementById('modalEyebrow').textContent = cat.eyebrow;
+  document.getElementById('modalTitle').textContent   = cat.title;
+  document.getElementById('modalDesc').textContent    = cat.desc;
+  const wrap = document.getElementById('modalImgWrap');
+  const imgEl = document.getElementById('modalImg');
+  imgEl.src = IMGS[id] || ''; imgEl.alt = cat.title;
+  wrap.className = 'modal-img-wrap' + (IMG_STYLE[id] === 'dark' ? ' dark' : '');
+  document.getElementById('modalThead').innerHTML = '<tr>' + cat.thead.map(h=>`<th>${h}</th>`).join('') + '</tr>';
+  document.getElementById('modalTbody').innerHTML = cat.tbody.map(r=>'<tr>'+r.map(c=>`<td>${c}</td>`).join('')+'</tr>').join('');
+  const msg = encodeURIComponent(`Hola, me interesa cotizar: ${cat.title}. ¿Me pueden ayudar?`);
+  document.getElementById('waBtn').href = `https://wa.me/${CONFIG.waNumber}?text=${msg}`;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  // Gestión de foco para accesibilidad
+  lastFocused = document.activeElement;
+  document.getElementById('modalBox').focus();
+}
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+}
+function handleOverlayClick(e) { if (e.target === document.getElementById('modalOverlay')) closeModal(); }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeModal(); closeMobileMenu(); }
+  // Focus trap dentro del modal abierto
+  if (e.key === 'Tab' && document.getElementById('modalOverlay').classList.contains('open')) {
+    const box = document.getElementById('modalBox');
+    const f = box.querySelectorAll('a[href], button, [tabindex]:not([tabindex="-1"])');
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+// Tarjetas del catálogo: abrir con teclado (Enter/Espacio) y mouse
+document.addEventListener('DOMContentLoaded', function() {
+  const grid = document.getElementById('catalogGrid');
+  if (grid) {
+    grid.addEventListener('click', e => {
+      const card = e.target.closest('.cat-card');
+      if (card) openModal(card.dataset.id);
+    });
+    grid.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        const card = e.target.closest('.cat-card');
+        if (card) { e.preventDefault(); openModal(card.dataset.id); }
+      }
+    });
+  }
+});
+
+// Filtros por categoría (con estado accesible aria-pressed)
+function applyCatalogView() {
+  const f = document.querySelector('.filter-btn.active')?.dataset.filter || 'all';
+  const q = (document.getElementById('catalogSearch')?.value || '').trim().toLowerCase();
+  let visible = 0;
+  document.querySelectorAll('.cat-card').forEach(card => {
+    const matchCat = (f === 'all' || card.dataset.cat === f);
+    const matchTxt = !q || card.textContent.toLowerCase().includes(q);
+    const show = matchCat && matchTxt;
+    card.style.display = show ? 'flex' : 'none';
+    if (show) visible++;
+  });
+  const empty = document.getElementById('catalogEmpty');
+  if (empty) empty.style.display = visible ? 'none' : 'block';
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-pressed', 'false');
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-pressed', 'true');
+    applyCatalogView();
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const search = document.getElementById('catalogSearch');
+  if (search) search.addEventListener('input', applyCatalogView);
+});
+
+// ── Formulario de contacto (funcional, envía por WhatsApp) ──
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const status = document.getElementById('formStatus');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    status.className = 'form-status';
+    status.textContent = '';
+
+    // Validación
+    const required = form.querySelectorAll('[required]');
+    let firstInvalid = null;
+    required.forEach(el => {
+      const ok = el.checkValidity() && el.value.trim() !== '';
+      el.classList.toggle('invalid', !ok);
+      if (!ok && !firstInvalid) firstInvalid = el;
+    });
+    if (firstInvalid) {
+      status.classList.add('error');
+      status.textContent = 'Por favor completa los campos marcados antes de enviar.';
+      firstInvalid.focus();
+      return;
+    }
+
+    // Arma el mensaje y abre WhatsApp (canal principal del negocio)
+    const v = id => (form.querySelector('#'+id)?.value || '').trim();
+    const lineas = [
+      'Nueva solicitud desde el sitio web:',
+      'Nombre: ' + v('cf-nombre'),
+      v('cf-empresa') ? 'Empresa: ' + v('cf-empresa') : null,
+      'Correo: ' + v('cf-email'),
+      v('cf-tel') ? 'Teléfono: ' + v('cf-tel') : null,
+      'Asunto: ' + v('cf-asunto'),
+      'Mensaje: ' + v('cf-mensaje')
+    ].filter(Boolean);
+    const url = 'https://wa.me/' + CONFIG.waNumber + '?text=' + encodeURIComponent(lineas.join('\n'));
+
+    status.classList.add('ok');
+    status.textContent = 'Abriendo WhatsApp para enviar tu mensaje…';
+    window.open(url, '_blank', 'noopener');
+    form.reset();
+
+    /* ── Alternativa: enviar a un backend (Formspree) en vez de WhatsApp ──
+       Reemplaza el bloque de arriba (desde "Arma el mensaje") por:
+
+       fetch('https://formspree.io/f/TU_ID', {
+         method: 'POST',
+         headers: { 'Accept': 'application/json' },
+         body: new FormData(form)
+       })
+       .then(r => {
+         if (r.ok) { status.classList.add('ok'); status.textContent = '¡Gracias! Te responderemos pronto.'; form.reset(); }
+         else { status.classList.add('error'); status.textContent = 'No se pudo enviar. Intenta por WhatsApp.'; }
+       })
+       .catch(() => { status.classList.add('error'); status.textContent = 'Error de conexión. Intenta por WhatsApp.'; });
+    */
+  });
+
+  // Quita el marcado de error al corregir
+  form.querySelectorAll('[required]').forEach(el => {
+    el.addEventListener('input', () => el.classList.remove('invalid'));
+  });
+});
+</script>
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modalBox" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+    <div class="modal-header">
+      <div class="modal-header-info">
+        <p class="modal-eyebrow" id="modalEyebrow"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-img-wrap" id="modalImgWrap">
+        <img class="modal-img" id="modalImg" src="" alt="" />
+      </div>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="specs-table-wrap">
+        <p class="specs-table-label">Especificaciones disponibles</p>
+        <table class="specs-table"><thead id="modalThead"></thead><tbody id="modalTbody"></tbody></table>
+      </div>
+      <div class="modal-actions">
+        <a class="btn-wa" id="waBtn" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Cotizar este producto
+        </a>
+        <button class="btn-back" onclick="closeModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══ CHAT FLOTANTE ══ -->
+<button id="ai-bubble" onclick="toggleChat()" aria-label="Abrir chat de ayuda" aria-expanded="false" aria-controls="ai-chat-box">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+  </svg>
+  <span id="bubble-badge">1</span>
+</button>
+
+<div id="ai-chat-box" role="dialog" aria-label="Asistente de Castelli Tools">
+  <div id="ai-chat-header">
+    <div id="ai-chat-title">
+      <div id="ai-avatar" aria-hidden="true">🔧</div>
+      <div>
+        <strong>Castelli Tools</strong>
+        <span>Asistente de herramientas</span>
+      </div>
+    </div>
+    <button onclick="toggleChat()" id="ai-close" aria-label="Cerrar chat">✕</button>
+  </div>
+  <div id="ai-messages" aria-live="polite" aria-atomic="false"></div>
+  <div id="ai-options"></div>
+  <div id="ai-input-row">
+    <label for="ai-input" class="visually-hidden">Escribe tu pregunta</label>
+    <input id="ai-input" type="text" placeholder="Escribe tu pregunta..." onkeydown="if(event.key==='Enter')handleFreeText()" />
+    <button onclick="handleFreeText()" id="ai-send" aria-label="Enviar mensaje">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<style>
+  #ai-bubble {
+    position: fixed; bottom: 28px; right: 28px;
+    width: 56px; height: 56px;
+    border: none; padding: 0;
+    background: linear-gradient(135deg, #2550f0, #1430b8);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; cursor: pointer;
+    box-shadow: 0 4px 20px rgba(27,63,228,.5);
+    z-index: 9999; transition: transform .2s;
+  }
+  #ai-bubble:hover { transform: scale(1.08); }
+  #ai-bubble svg { width: 24px; height: 24px; }
+  #bubble-badge {
+    position: absolute; top: -4px; right: -4px;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: #e63030; color: #fff;
+    font-size: .65rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  #bubble-badge.hidden { display: none; }
+
+  #ai-chat-box {
+    position: fixed; bottom: 96px; right: 24px;
+    width: 320px; max-height: 500px;
+    background: #0d1828;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 16px;
+    display: none; flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0,0,0,.5);
+    z-index: 9998;
+    font-family: 'Barlow', sans-serif;
+  }
+  #ai-chat-box.open { display: flex; }
+
+  #ai-chat-header {
+    background: linear-gradient(135deg, #1b3fe4, #1430b8);
+    padding: 14px 16px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  #ai-chat-title { display: flex; align-items: center; gap: 10px; color: #fff; }
+  #ai-avatar {
+    width: 36px; height: 36px;
+    background: rgba(255,255,255,.15); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+  }
+  #ai-chat-title strong { display: block; font-size: .88rem; }
+  #ai-chat-title span { font-size: .7rem; opacity: .75; }
+  #ai-close {
+    background: none; border: none; color: #fff;
+    font-size: 1rem; cursor: pointer; opacity: .7; padding: 4px 8px; border-radius: 4px;
+  }
+  #ai-close:hover { opacity: 1; }
+
+  #ai-messages {
+    flex: 1; overflow-y: auto;
+    padding: 14px; display: flex; flex-direction: column; gap: 8px;
+    scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.1) transparent;
+  }
+  .ai-msg {
+    max-width: 88%; padding: 9px 13px; border-radius: 12px;
+    font-size: .83rem; line-height: 1.5; word-break: break-word;
+  }
+  .ai-msg.bot {
+    background: rgba(255,255,255,.08); color: rgba(255,255,255,.9);
+    align-self: flex-start; border-bottom-left-radius: 3px;
+  }
+  .ai-msg.user {
+    background: linear-gradient(135deg,#2550f0,#1430b8); color:#fff;
+    align-self: flex-end; border-bottom-right-radius: 3px;
+  }
+
+  #ai-options {
+    padding: 0 12px 10px; display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .ai-opt {
+    background: rgba(27,63,228,.25);
+    border: 1px solid rgba(27,63,228,.5);
+    color: #7fa3ff; border-radius: 999px;
+    padding: 6px 12px; font-size: .75rem; cursor: pointer;
+    font-family: 'Barlow', sans-serif;
+    transition: background .2s;
+  }
+  .ai-opt:hover { background: rgba(27,63,228,.45); color: #fff; }
+
+  #ai-input-row {
+    display: flex; gap: 8px; padding: 10px 12px;
+    border-top: 1px solid rgba(255,255,255,.07);
+    background: rgba(0,0,0,.2);
+  }
+  #ai-input {
+    flex: 1; background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.12); border-radius: 999px;
+    padding: 8px 13px; color: #fff;
+    font-family: 'Barlow', sans-serif; font-size: .82rem; outline: none;
+  }
+  #ai-input::placeholder { color: rgba(255,255,255,.3); }
+  #ai-input:focus { border-color: #1b3fe4; }
+  #ai-send {
+    width: 34px; height: 34px; background: #1b3fe4; border: none;
+    border-radius: 50%; color: #fff; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  #ai-send svg { width: 14px; height: 14px; }
+
+  .btn-wa-chat {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #25d366; color: #fff; border: none;
+    border-radius: 999px; padding: 9px 16px;
+    font-family: 'Barlow', sans-serif; font-size: .82rem;
+    font-weight: 700; cursor: pointer; text-decoration: none; margin-top: 4px;
+  }
+
+  @media (max-width: 768px) {
+    #ai-chat-box { width: calc(100vw - 32px); right: 16px; bottom: 84px; }
+    #ai-bubble { bottom: 20px; right: 20px; }
+  }
+</style>
+
+<script>
+(function() {
+  const WA = (typeof CONFIG !== 'undefined' && CONFIG.waNumber) ? CONFIG.waNumber : '521XXXXXXXXXX';
+
+  // Base de conocimiento — alineada con el catálogo real (herramienta de corte)
+  const KB = [
+    {
+      keys: ["broca","brocas","drill","taladro","agujero","perforar"],
+      answer: "Manejamos brocas fraccionales, numéricas, métricas y de zanco cónico, en acero alta velocidad. Marcas Cleveland y Republic Drill. ¿Buscas alguna medida en específico?"
+    },
+    {
+      keys: ["machuelo","macho","rosca","roscado","tap","tapping"],
+      answer: "Tenemos machuelos de mano y para máquina, en medidas métricas y en pulgadas, rosca derecha rectificada. Marca Cleveland (listas 1004M y 1053)."
+    },
+    {
+      keys: ["fresa","fresas","endmill","end mill","cortador","cutter","fresado","vertical","disco","chavetero","woodruff","engrane"],
+      answer: "Manejamos fresas de múltiples flautas, de carburo sólido, para chavetero (Woodruff), de disco, cortadores verticales y cortadores para engranes. Marcas Cleveland, Star USA y Meda. ¿Qué aplicación necesitas?"
+    },
+    {
+      keys: ["rima","rimas","escariador","escariar","ream"],
+      answer: "Contamos con rimas para máquina, de mano y ajustables, para acabados precisos en agujeros. Marcas Cleveland, Meda Superior Import, Star USA y Lavallee & Ide. ¿Necesitas alguna medida?"
+    },
+    {
+      keys: ["buril","buriles","cuchilla","tronzar","torno","torneado","momax"],
+      answer: "Manejamos buriles cuadrados Momax Cobalt y cuchillas para tronzar, en acero alta velocidad y al cobalto. Marca Cleveland (listas 853 / 855 / 858)."
+    },
+    {
+      keys: ["marca","marcas","cleveland","meda","star","lavallee","republic","cle-line","cleline"],
+      answer: "Trabajamos marcas de herramienta de corte industrial: Cleveland, Cle-Line, Meda Superior Import, Star USA, Lavallee & Ide y Republic Drill. ¿Te interesa alguna en especial?"
+    },
+    {
+      keys: ["precio","precios","costo","cuánto","cuanto","vale","cotizar","cotización","cotizacion"],
+      answer: "Para precios exactos y disponibilidad actualizada, lo mejor es que te conecte con un asesor. Te arma una cotización personalizada de inmediato."
+    },
+    {
+      keys: ["horario","hora","abierto","abren","cierran","cuando","cuándo"],
+      answer: "Nuestro horario es de lunes a viernes de 9 AM a 6 PM, y sábados de 9 AM a 2 PM. ¿En qué más puedo ayudarte?"
+    },
+    {
+      keys: ["envio","envío","entrega","domicilio","mandan","shipping","volumen","mayoreo"],
+      answer: "Para envíos, entregas y pedidos por volumen, te recomiendo hablar con un asesor que te dará los detalles según tu ubicación y cantidad."
+    },
+  ];
+
+  let chatOpened = false;
+  const msgs = () => document.getElementById('ai-messages');
+  const opts = () => document.getElementById('ai-options');
+
+  function addMsg(text, role) {
+    const d = document.createElement('div');
+    d.className = 'ai-msg ' + role;
+    d.textContent = text;
+    msgs().appendChild(d);
+    msgs().scrollTop = msgs().scrollHeight;
+  }
+
+  function setOptions(options) {
+    opts().innerHTML = '';
+    options.forEach(o => {
+      const b = document.createElement('button');
+      b.className = 'ai-opt';
+      b.textContent = o.label;
+      b.onclick = () => {
+        addMsg(o.label, 'user');
+        opts().innerHTML = '';
+        setTimeout(() => {
+          addMsg(o.answer, 'bot');
+          if (o.followup) setOptions(o.followup);
+          else setTimeout(offerWA, 600);
+        }, 300);
+      };
+      opts().appendChild(b);
+    });
+  }
+
+  function offerWA() {
+    addMsg('¿Hay algo más en lo que pueda ayudarte? Si necesitas una cotización o tienes preguntas más específicas, puedo conectarte con un asesor de Castelli Tools.', 'bot');
+    const wa = document.createElement('a');
+    wa.className = 'btn-wa-chat';
+    wa.href = `https://wa.me/${WA}?text=Hola%2C%20necesito%20asesoría%20sobre%20herramienta%20de%20corte`;
+    wa.target = '_blank';
+    wa.rel = 'noopener';
+    wa.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.561 4.14 1.541 5.879L0 24l6.305-1.516A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.368l-.36-.213-3.72.976.992-3.624-.234-.373A9.772 9.772 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg> Hablar con un asesor';
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'padding:0 14px 12px;';
+    wrap.appendChild(wa);
+    msgs().appendChild(wrap);
+    msgs().scrollTop = msgs().scrollHeight;
+  }
+
+  function handleFreeText() {
+    const input = document.getElementById('ai-input');
+    const text = input.value.trim().toLowerCase();
+    if (!text) return;
+    addMsg(input.value.trim(), 'user');
+    input.value = '';
+    opts().innerHTML = '';
+
+    const match = KB.find(k => k.keys.some(kw => text.includes(kw)));
+    setTimeout(() => {
+      if (match) {
+        addMsg(match.answer, 'bot');
+        setTimeout(offerWA, 600);
+      } else {
+        addMsg('No encontré información específica sobre eso. ¿Te gustaría hablar directamente con uno de nuestros asesores?', 'bot');
+        offerWA();
+      }
+    }, 350);
+  }
+
+  function toggleChat() {
+    const box = document.getElementById('ai-chat-box');
+    const bubble = document.getElementById('ai-bubble');
+    const open = box.classList.toggle('open');
+    if (bubble) bubble.setAttribute('aria-expanded', open ? 'true' : 'false');
+    document.getElementById('bubble-badge').classList.add('hidden');
+    if (open && !chatOpened) {
+      chatOpened = true;
+      setTimeout(() => {
+        addMsg('¡Hola! 👋 ¿En qué puedo ayudarte hoy?', 'bot');
+        setOptions([
+          { label: '🔩 Brocas', answer: 'Manejamos brocas fraccionales, numéricas, métricas y de zanco cónico. Marcas Cleveland y Republic Drill. ¿Necesitas alguna medida específica?' },
+          { label: '📐 Fresas y cortadores', answer: 'Fresas de múltiples flautas, carburo sólido, para chavetero, de disco y cortadores verticales y para engranes. Marcas Cleveland, Star USA y Meda. ¿Qué aplicación necesitas?' },
+          { label: '🔧 Machuelos y rimas', answer: 'Machuelos de mano y máquina en métrico y pulgadas. Rimas de mano, máquina y ajustables. Marcas Cleveland, Meda, Star USA y Lavallee.' },
+          { label: '🪛 Buriles y cuchillas', answer: 'Buriles cuadrados Momax Cobalt y cuchillas para tronzar, en HSS y cobalto. Marca Cleveland.' },
+          { label: '💲 Precios y cotización', answer: 'Para precios exactos y disponibilidad, lo mejor es hablar con un asesor que puede darte una cotización personalizada de inmediato.' },
+          { label: '🕐 Horarios', answer: 'Lunes a viernes de 9 AM a 6 PM. Sábados de 9 AM a 2 PM. ¡Con gusto te atendemos!' },
+        ]);
+      }, 300);
+    }
+    if (box.classList.contains('open')) document.getElementById('ai-input').focus();
+  }
+
+  window.toggleChat = toggleChat;
+  window.handleFreeText = handleFreeText;
+})();
+</script>
+
+</body>
+</html>
